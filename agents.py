@@ -1,6 +1,10 @@
+# setup
+# pip install llama-stack
+# llama stack build --template together --image-type venv
+
 import os
 
-from llama_stack.lib.agents.agent import Agent
+from llama_stack_client.lib.agents.agent import Agent
 from llama_stack_client.lib.agents.event_logger import EventLogger
 from llama_stack_client.types.agent_create_params import AgentConfig
 from llama_stack_client.types import Document
@@ -39,6 +43,7 @@ client.vector_dbs.register(
     embedding_model="all-MiniLM-L6-v2",
     embedding_dimension=384,
 )
+
 
 # Insert the documents into the vector database
 client.tool_runtime.rag_tool.insert(
