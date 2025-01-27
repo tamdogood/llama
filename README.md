@@ -17,7 +17,7 @@ export LLAMA_STACK_PORT=8321
 # Terminal 1 for ollama inference
 ollama run llama3.2:3b-instruct-fp16 --keepalive 60m
 ```
-- After you have the ollama serving running, you can check to make sure it's running in the right port by checking out http://localhost:11434/ in your browser ![[Pasted image 20250126152620.png]]
+- After you have the ollama serving running, you can check to make sure it's running in the right port by checking out http://localhost:11434/ in your browser!
 - Once `ollama` is running, you can open a new terminal in parallel and run these commands:
 ``` bash
 # Terminal 2 for llama-stack distro build
